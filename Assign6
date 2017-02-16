@@ -1,0 +1,75 @@
+1) Write a program to accepts two numbers from stdin and find all the odd as well as even
+numbers present in between them.
+
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a,b,c;
+	Scanner sc=new Scanner(System.in);
+	a=sc.nextInt();                                   //taking first number as input
+ 	b=sc.nextInt();                                    //taking second number as input
+	for(int i=a;i<=b;i++)
+  {
+    if(i%2==0)
+    {
+      System.out.println("Even numbers "+i);
+    }
+    else
+    System.out.println("Odd numbers "+i);
+ }
+ }
+}
+
+2) Joe is scared to go to school. When her dad asked the reason, joe said she is unable to
+complete the task given by her teacher. The task was to find the “first 10 multiples” of the
+number entered from stdin.
+
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a,b,c;
+	Scanner sc=new Scanner(System.in);
+  System.out.println("Input");
+	a=sc.nextInt();                                   //taking number as input
+  for(int i=1;i<=10;i++)
+  {
+     b=a*i;
+    System.out.println(a+"X"+i+"="+b);            //prints the multiple
+}
+}
+}
+
+3) Write a program consisting method sum() and demonstrate the concept of method
+overloading using this method.
+
+import java.util.*;
+public class acad {
+public static void main(String args[])
+{
+	int a,b,c;
+	Scanner sc=new Scanner(System.in);
+ 	a=sc.nextInt();                                   //taking first number as input   
+	b=sc.nextInt();                                    //taking second number as input
+	c=sc.nextInt();                                    //taking third number as input
+  sum(a);
+  sum(a,b);
+  sum(a,b,c);
+	
+}
+public static void sum(int a)
+{
+   System.out.println("Sum method with one parameter" +a);
+}
+
+public static void sum(int a,int b)
+{
+   System.out.println("Sum method with two parameters" +a+" and "+b);
+}
+
+public static void sum(int a,int b,int c)
+{
+   System.out.println("Sum method with three parameters" +a+" and "+b" and "+c);
+}
+}
